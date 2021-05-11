@@ -18,6 +18,7 @@ preloader = "" # use jpg, png, svg or gif format.
 enable = true
 label = "Get Started"
 link = "contact"
+isTranslated = false
 
 # cookies
 [cookies]
