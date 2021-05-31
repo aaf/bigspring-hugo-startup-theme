@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "http://examplesite.org/"
-title = "Bigspring Hugo"
+baseURL = "https:/RevenueRabbit.app/"
+title = "Revenue Rabbit"
 theme = "bigspring"
 # post pagination
 paginate = "3"
