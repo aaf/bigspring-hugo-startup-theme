@@ -140,10 +140,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <span></span><h2 class="section-title">{{ .title | markdownify }}
+        <img src="/images/Feather-arrows-corner-right-down.svg.png" alt="" class="img-fluid" width="40 px"> </h2>
+      </span>
       </div>
     </div>
   </div>
+  <iframe style="margin:auto;display:block" width="640" height="637" src="https://www.loom.com/embed/dcd56e086d134432a4e3a5b723f54904" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
 </section>
 {{ end }}
