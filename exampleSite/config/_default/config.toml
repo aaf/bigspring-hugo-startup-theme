@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https:/RevenueRabbit.app/"
+baseURL = "https://revenuerabbit.efmrl.net:8443/"
 title = "Revenue Rabbit"
 theme = "bigspring"
 # post pagination

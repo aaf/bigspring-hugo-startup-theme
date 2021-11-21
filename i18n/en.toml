@@ -14,10 +14,10 @@ other = "Your Name"
 other = "Your Email"
 
 [subject]
-other = "Subject"
+other = "Promo Code"
 
 [yourmessage]
 other = "Your Message"
 
 [sendnow]
-other = "Send Now"
+other = "Purchase Now"

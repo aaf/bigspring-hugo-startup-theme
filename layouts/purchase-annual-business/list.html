@@ -1,0 +1,40 @@
+{{ define "headStripe"}}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/checkout.css" />
+<script src="https://js.stripe.com/v3/"></script>
+<script src="js/checkout.js" defer></script>
+
+{{end}}
+
+
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="row">
+       <div class="col-lg-7 mb-4 mb-lg-0">
+        <form id="payment-form" action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="{{ i18n `youremail` }}">
+          <input type="text" class="form-control mb-3" id="promoCode" name="promo code" placeholder="{{ i18n `subject` }}">
+          <div id="payment-element">
+            <!--Stripe.js injects the Payment Element-->
+          </div>
+          <button id="submit" type="submit" value="send" class="btn btn-primary">
+            <div class="spinner hidden" id="spinner"></div>
+            <span id="button-text">{{ i18n `sendnow` }}</span>
+          </button>
+          <div id="payment-message" class="hidden"></div>
+        </form>
+
+      </div> 
+      
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
